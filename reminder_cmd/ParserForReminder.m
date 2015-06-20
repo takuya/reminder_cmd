@@ -79,10 +79,9 @@
   }];
   while( busy ){ sleep(0.1);}
   if( self.arguments.count > 0){
-    NSString *keywowords =[self.arguments objectAtIndex:0];
-    NSPredicate *search_by_title = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"title like '%@'", keywowords ]];
+    NSString *keywords =[self.arguments objectAtIndex:0];
+    NSPredicate *search_by_title = [NSPredicate predicateWithFormat:@" title contains[d]  %@",keywords ];
     reminders = [reminders filteredArrayUsingPredicate:search_by_title];
-
   }
   for(EKReminder *reminder in reminders){
       //printf("%s - %s\n",[reminder.calendar.title UTF8String],[reminder.title UTF8String]);
