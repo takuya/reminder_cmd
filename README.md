@@ -38,6 +38,7 @@ Subcommand to add a reminder to default list.
 
 ```
 $> reminder_cmd add remember_the_milk
+$> reminder_cmd add remember the milk 
 ```
 
 # search 
