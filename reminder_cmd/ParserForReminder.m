@@ -64,7 +64,8 @@
   }
 }
 -(void)add_reminder_with_title_to_default_calendar{
-  [MyReminderAccess add_reminder_with_title_to_default_calendar: self.arguments[0]];
+  NSString *remind_me = [self.arguments componentsJoinedByString:@" "];
+  [MyReminderAccess add_reminder_with_title_to_default_calendar: remind_me];
 }
 
 -(void)search{
