@@ -1,4 +1,5 @@
 # reminder_cmd
+
 Commad Line Interface for OSX Reminders.app
 
 
@@ -14,6 +15,10 @@ avaiable sub commands
 
 # subcommands
 
+This reminder_cmd is with subcommands.
+
+Available subcommands are listed below.
+
 -  list_of_list
 -  list
 -  add
@@ -21,15 +26,15 @@ avaiable sub commands
 
 # list_of_list
 
-shows reminders list (calendar) 
+Subcommand to shows list of reminders lists (calendar list).
 
 # list 
 
-list up  all of reminder  in mac 
+Subcommand to list up  all of reminder  in mac .
 
 # add 
 
-add Reminder to default list
+Subcommand to add a reminder to default list.
 
 ```
 $> reminder_cmd add remember_the_milk
@@ -37,7 +42,7 @@ $> reminder_cmd add remember_the_milk
 
 # search 
 
-search reminder by title 
+Subcommand to search a reminder by title. 
 
 ```
 $> reminder_cmd search milk
